@@ -214,7 +214,7 @@ python benchmarks/benchmark_dataset.py \
     --gen_len 2048 \
     --block_length 32 \
     --gpu 0,1,2,3 \
-    --output_dir runs/llada2_mini \
+    --output_dir runs/llada2_flash \
     --use_tp \
     --parallel_decoding threshold \
     --threshold 0.9 \
@@ -224,6 +224,20 @@ python benchmarks/benchmark_dataset.py \
  
   - Other entry points:
     - `benchmark.py` — Single-sample profiling.
+    - Example 1 (threshold decoder, TP across 4 GPUs, LLaDA2-mini))
+    ```shell
+    python benchmarks/benchmark.py \
+    --model_name inclusionAI/LLaDA2.0-mini-preview \
+    --model_type llada2 \
+    --gen_len 2048 \
+    --block_length 32 \
+    --gpu 0,1,2,3 \
+    --use_tp \
+    --parallel_decoding threshold \
+    --threshold 0.9 \
+    --cache prefix \
+    --use_bd
+    ```
 
 
 - **End-to-end evaluation (speed + accuracy)** — scripts in `evaluations/`
