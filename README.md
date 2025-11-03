@@ -187,7 +187,7 @@ python benchmarks/benchmark_dataset.py \
 ```
 
   - Example 2 (threshold decoder, TP across 4 GPUs, LLaDA2-mini):
-
+  - **Currently, we only support up to 4-way parallelism for LLaDA2 since the number of heads is 4.**
   ```
   python benchmarks/benchmark_dataset.py \
     --model_name inclusionAI/LLaDA2.0-mini-preview \
@@ -205,6 +205,7 @@ python benchmarks/benchmark_dataset.py \
   ```
 
   - Example 3 (threshold decoder, TP across 4 GPUs, LLaDA2-flash):
+  -  **Currently, we only support up to 4-way parallelism for LLaDA2 since the number of heads is 4.**
   ```
   python benchmarks/benchmark_dataset.py \
     --model_name inclusionAI/LLaDA2.0-flash-preview \
