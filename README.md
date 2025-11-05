@@ -246,6 +246,13 @@ model = AutoModelForCausalLM.from_pretrained(m, trust_remote_code=True, torch_dt
   - For more examples and comprehensive instructions, see [our quickstart guide](evaluations/eval_guide.md).
   - Currently, the evaluation configuration is only aligned with LLaDA-MoE; lm-eval evaluations for llada2-mini/flash and other models will be updated later.
 
+## Contact us
+- Wechat Group
+<p align="center">
+  <img src="assets/wechat.JPG" alt="Wechat Group" width="200">
+  <br>
+  DInfer Wechat Group
+</p>
 
 ## Citation
 ```
