@@ -36,6 +36,9 @@ dInfer supports multiple dLLM variants, including LLaDA and LLaDA-MoE.
 - PyTorch compilation and NVIDIA CUDA Graphs for efficient kernel execution
 - Loop unrolling mechanism to eliminate CUDA stream bubbles across diffusion iterations
 
+## News
+**\[2025/11/15\]** Support the inference on block diffusion LLMs (LLaDA2-mini and LLaDA2-flash) and provide [the benchmark script](https://github.com/inclusionAI/dInfer/blob/master/benchmarks/benchmark_dataset_sglang.py).
+
 ## Contents
 - [Supported Models](#supported-models)
 - [Quick Start](#quick-start)
